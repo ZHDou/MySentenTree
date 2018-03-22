@@ -9,7 +9,12 @@
 </body>
     
 <script>      
-    d3.tsv("text.tsv", function(data) {console.log(data)});
+    d3.tsv("text.tsv", function(error,tsvdata) {
+     if(error){
+          console.log(error);
+     }
+     console.log(tsvdata);
+    });
 </script>
 
 </html>
