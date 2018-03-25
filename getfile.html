@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <meta  http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <title>test</title>    
+    <script type="text/javascript" src="d3.js"></script>    
+</head>    
+<body>
+    <div id="borderdiv"> 123</div>      
+</body>
+
+<script>
+   d3.tsv("demo.tsv",function(error,tsvdata){  
+      console.log(tsvdata);  
+      var str = d3.tsv.format( tsvdata );           
+      console.log(str.length);  
+      console.log(str);     
+    });  
+</script>
+
+</html>
