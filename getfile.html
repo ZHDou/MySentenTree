@@ -2,14 +2,14 @@
 <head>
     <meta  http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
     <title>test</title>    
-    <script type="text/javascript" src="d3.min.js"></script>    
+    <script type="text/javascript" src="d3.js"></script>    
 </head>    
 <body>
     <div id="borderdiv"> 123</div>      
 </body>
 
 <script>
-   d3.tsv("demo.tsv",function(error,tsvdata){  
+   d3.tsv("demo.tsv").then(function(error,tsvdata)){  
       console.log(tsvdata);      
     });  
 </script>
